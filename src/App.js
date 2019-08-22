@@ -2,6 +2,7 @@ import React from 'react';
 import Clock from './components/Clock'
 import Counter from './components/Counter'
 import ActionClick from './components/ActionClick'
+import LoginControl from './components/LoginControl'
 
 function formatUser ({ firstName, lastName }) {
   return `${firstName} ${lastName}`;
@@ -34,6 +35,10 @@ export default function App () {
       <Clock />
       <Counter />
       <ActionClick />
+      <div>
+        <h1>Conditional Rendering</h1>
+        <LoginControl />
+      </div>
     </div>
   );
 }

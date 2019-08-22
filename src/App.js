@@ -3,6 +3,7 @@ import Clock from './components/Clock'
 import Counter from './components/Counter'
 import ActionClick from './components/ActionClick'
 import LoginControl from './components/LoginControl'
+import ListAndKeys from './components/ListAndKeys'
 
 function formatUser ({ firstName, lastName }) {
   return `${firstName} ${lastName}`;
@@ -24,6 +25,7 @@ function Welcome ({ name }) {
 }
 
 export default function App () {
+  const numbers = [1, 23, 2, 5 , 7, 9];
   return (
     <div>
       <h1>
@@ -38,6 +40,12 @@ export default function App () {
       <div>
         <h1>Conditional Rendering</h1>
         <LoginControl />
+      </div>
+      <div>
+        <h1>List and Keys</h1>
+        <ListAndKeys
+          numbers={numbers}
+        />
       </div>
     </div>
   );

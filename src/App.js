@@ -1,4 +1,7 @@
 import React from 'react';
+import Clock from './components/Clock'
+import Counter from './components/Counter'
+import ActionClick from './components/ActionClick'
 
 function formatUser ({ firstName, lastName }) {
   return `${firstName} ${lastName}`;
@@ -28,6 +31,9 @@ export default function App () {
       <Welcome name='bambang' />
       <Welcome name='alice' />
       <ImgCustom src={imgUrl}/>
+      <Clock />
+      <Counter />
+      <ActionClick />
     </div>
   );
 }

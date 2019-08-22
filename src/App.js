@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+function formatUser ({ firstName, lastName }) {
+  return `${firstName} ${lastName}`;
+}
+const user = {
+  firstName: 'bagus',
+  lastName: 'prabangkoro'
+}
+
+const imgUrl = 'https://picsum.photos/200/300';
+function ImgCustom ({ src }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <img src={src} />
   );
 }
 
-export default App;
+function Welcome ({ name }) {
+  return <p>hi, { name }!</p>;
+}
+
+export default function App () {
+  return (
+    <div>
+      <h1>
+        Hello, { formatUser(user) }
+      </h1>
+      <Welcome name='bambang' />
+      <Welcome name='alice' />
+      <ImgCustom src={imgUrl}/>
+    </div>
+  );
+}

@@ -5,6 +5,7 @@ import ActionClick from './components/ActionClick'
 import LoginControl from './components/LoginControl'
 import ListAndKeys from './components/ListAndKeys'
 import Forms from './components/Forms'
+import LiftingState from './components/LiftingState'
 
 function formatUser ({ firstName, lastName }) {
   return `${firstName} ${lastName}`;
@@ -51,6 +52,10 @@ export default function App () {
       <div>
         <h1>Forms</h1>
         <Forms />
+      </div>
+      <div>
+        <h1>Lifting State Up</h1>
+        <LiftingState />
       </div>
     </div>
   );

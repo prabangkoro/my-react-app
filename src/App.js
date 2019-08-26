@@ -4,6 +4,7 @@ import Counter from './components/Counter'
 import ActionClick from './components/ActionClick'
 import LoginControl from './components/LoginControl'
 import ListAndKeys from './components/ListAndKeys'
+import Forms from './components/Forms'
 
 function formatUser ({ firstName, lastName }) {
   return `${firstName} ${lastName}`;
@@ -46,6 +47,10 @@ export default function App () {
         <ListAndKeys
           numbers={numbers}
         />
+      </div>
+      <div>
+        <h1>Forms</h1>
+        <Forms />
       </div>
     </div>
   );

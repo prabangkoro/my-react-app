@@ -5,7 +5,8 @@ import ActionClick from './components/ActionClick'
 import LoginControl from './components/LoginControl'
 import ListAndKeys from './components/ListAndKeys'
 import Forms from './components/Forms'
-import LiftingState from './components/LiftingState'
+import LiftingState from './components/LiftingState' 
+import Composistion from './components/Composistion' 
 
 function formatUser ({ firstName, lastName }) {
   return `${firstName} ${lastName}`;
@@ -56,6 +57,10 @@ export default function App () {
       <div>
         <h1>Lifting State Up</h1>
         <LiftingState />
+      </div>
+      <div>
+        <h1>Composition</h1>
+        <Composistion />
       </div>
     </div>
   );
